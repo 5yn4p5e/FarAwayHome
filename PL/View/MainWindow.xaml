@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelFarAwayHome"
-        mc:Ignorable="d" Width="960" Height="550" WindowStartupLocation="CenterScreen" Title="Hotel California" Icon="hotelicon.png" FontFamily="Gabriola" Topmost="True">
+        mc:Ignorable="d" Width="960" Height="550" WindowStartupLocation="CenterScreen" Title="FarAwayHome" Icon="hotelicon.png" FontFamily="Gabriola" Topmost="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -44,7 +44,7 @@
 
         <Grid Grid.Row="1" Name="stk">
             <Image Source="main.jpg" HorizontalAlignment="Center" VerticalAlignment="Top" />
-            <Label Content="ДОБРО ПОЖАЛОВАТЬ В CALIFORNIA HOTEL" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40" FontFamily="Tahoma" FontSize="40" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+            <Label Content="ОТЕЛЬ ВДАЛИ ОТ ДОМА" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40" FontFamily="Tahoma" FontSize="40" FontWeight="Medium" Foreground="#FF2F6E7D"/>
         </Grid>
 
     </Grid>

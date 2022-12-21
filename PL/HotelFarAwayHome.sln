@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelFarAwayHome", "HotelFarAwayHome.csproj", "{C69D6195-AF67-41CF-B7DE-7634F9DB995B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{252BCC75-9318-464A-835A-63C418C19827}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{EBAFE1B2-F516-4C20-9282-1717763551A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C69D6195-AF67-41CF-B7DE-7634F9DB995B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C69D6195-AF67-41CF-B7DE-7634F9DB995B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C69D6195-AF67-41CF-B7DE-7634F9DB995B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{252BCC75-9318-464A-835A-63C418C19827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{252BCC75-9318-464A-835A-63C418C19827}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{252BCC75-9318-464A-835A-63C418C19827}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{252BCC75-9318-464A-835A-63C418C19827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBAFE1B2-F516-4C20-9282-1717763551A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBAFE1B2-F516-4C20-9282-1717763551A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBAFE1B2-F516-4C20-9282-1717763551A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBAFE1B2-F516-4C20-9282-1717763551A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

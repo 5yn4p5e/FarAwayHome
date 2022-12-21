@@ -80,6 +80,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\AppViewModel.cs" />
+    <Compile Include="ViewModel\DBDataOperations.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
     <Compile Include="View\ReservationWindow.xaml.cs">
       <DependentUpon>ReservationWindow.xaml</DependentUpon>
     </Compile>
@@ -163,12 +166,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{252bcc75-9318-464a-835a-63c418c19827}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="building-old.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -176,7 +173,10 @@
     <Resource Include="View\main.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{ebafe1b2-f516-4c20-9282-1717763551a5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
