@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace HotelFarAwayHome.View
 {
     /// <summary>
-    /// Логика взаимодействия для BookingWindow.xaml
+    /// Логика взаимодействия для EditWindow.xaml
     /// </summary>
-    public partial class BookingWindow : UserControl
+    public partial class EditWindow : UserControl
     {
-        public BookingWindow(ApplicationViewModel appViewModel)
+        public EditWindow(ApplicationViewModel appViewModel)
         {
             InitializeComponent();
             DataContext = appViewModel;

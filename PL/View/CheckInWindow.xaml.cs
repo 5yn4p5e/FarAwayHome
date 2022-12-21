@@ -19,10 +19,10 @@ namespace HotelFarAwayHome.View
     /// </summary>
     public partial class CheckInWindow : UserControl
     {
-        public CheckInWindow(/*ApplicationViewModel appViewModel*/)
+        public CheckInWindow(ApplicationViewModel appViewModel)
         {
-            //InitializeComponent();
-            //DataContext = appViewModel;
+            InitializeComponent();
+            DataContext = appViewModel;
         }
     }
 }

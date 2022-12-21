@@ -24,7 +24,7 @@ namespace HotelFarAwayHome
         {
             InitializeComponent();
             //связываем представление и модель через ViewModel
-            //DataContext = new ApplicationViewModel(this);
+            DataContext = new ApplicationViewModel(this);
         }
     }
 }
