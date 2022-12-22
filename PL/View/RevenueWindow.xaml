@@ -19,9 +19,9 @@
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="10*" />
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content= "ОТЧЁТ ПО ВЫРУЧКЕ" Margin="0 10 0 10" HorizontalAlignment= "Center" VerticalAlignment="Top" FontFamily= "Tahoma" FontSize= "20" FontWeight= "Medium" Foreground= "#FF2F6E7D" />
+                <Label Grid.Row="0" Content= "ОТЧЁТ ПО ВЫРУЧКЕ" Margin="0 10 0 10" HorizontalAlignment= "Center" VerticalAlignment="Top" FontFamily= "Calibri" FontSize= "20" FontWeight= "Medium" Foreground= "#FF2F7D3B" />
                 <Grid Grid.Row="1">
-                    <DataGrid Background="White" x:Name="revenueGrd" AutoGenerateColumns="false" ItemsSource="{Binding report}" FontFamily="Tahoma" FontSize="14">
+                    <DataGrid Background="White" x:Name="revenueGrd" AutoGenerateColumns="false" ItemsSource="{Binding report}" FontFamily="Calibri" FontSize="14" BorderBrush="#FF68AF6C">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Заезд" Binding="{Binding Path=CheckInDate1}" Width="135" />
                             <DataGridTextColumn Header="Выезд" Binding="{Binding Path=CheckOutDate1}" Width="135" />
@@ -34,19 +34,19 @@
             </Grid>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Background="#FFDEF9FF">
-            <Label Content="ВВЕДИТЕ ДАТЫ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Tahoma" FontSize="30" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+        <StackPanel Grid.Column="1" Background="#FFE2FFDE">
+            <Label Content="ВВЕДИТЕ ДАТЫ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Calibri" FontSize="30" FontWeight="Medium" Foreground="#FF2F7D3B"/>
             <StackPanel HorizontalAlignment="Center" Margin="0 40 0 0" >
                 <Border Visibility="Visible" BorderBrush="White" CornerRadius="20" BorderThickness="5" Height="280" Width="240">
                     <Grid>
 
-                        <Label Content="Вывести отчёт за время:" HorizontalAlignment="Center" Margin="0 25 0 0" FontFamily="Tahoma" FontSize="17" Foreground="#FF2F6E7D"></Label>
-                        <Label Content="с:" HorizontalAlignment="Center" Margin="0 75 100 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                        <Label Content="по:" HorizontalAlignment="Center" Margin="0 130 100 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                        <DatePicker Name="beginDate" Margin="50 0 0 90" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Tahoma" FontSize="15"/>
-                        <DatePicker Name="endDate" Margin="50 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Tahoma" FontSize="15"/>
+                        <Label Content="Вывести отчёт за время:" HorizontalAlignment="Center" Margin="0 25 0 0" FontFamily="Calibri" FontSize="17" Foreground="#FF2F7D3B"></Label>
+                        <Label Content="с:" HorizontalAlignment="Center" Margin="0 75 100 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
+                        <Label Content="по:" HorizontalAlignment="Center" Margin="0 130 100 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
+                        <DatePicker Name="beginDate" Margin="50 0 0 90" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Calibri" FontSize="15"/>
+                        <DatePicker Name="endDate" Margin="50 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Calibri" FontSize="15"/>
 
-                        <Button BorderBrush="{x:Null}" Content="ВЫВЕСТИ"  Background="#FFBAEDF7" Foreground="White" Margin="0 200 0 0" x:Name="btnSearch" Command="{Binding RevenueCommand}" Height="35" Width="100" FontFamily="Tahoma" FontWeight="Medium" FontSize="20"/>
+                        <Button BorderBrush="{x:Null}" Content="ВЫВЕСТИ"  Margin="0 200 0 0" x:Name="btnSearch" Command="{Binding RevenueCommand}" Height="35" Width="100" FontSize="20"/>
                     </Grid>
                 </Border>
             </StackPanel>

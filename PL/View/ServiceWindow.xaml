@@ -9,24 +9,24 @@
              d:DesignHeight="500" d:DesignWidth="410">
     <Grid>
 
-        <StackPanel Background="#FFDEF9FF">
+        <StackPanel Background="#FFE2FFDE">
             <Grid x:Name= "bookstk">
-                <Label Content="ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Tahoma" FontSize="28" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+                <Label Content="ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Calibri" FontSize="28" FontWeight="Medium" Foreground="#FF2F7D3B"/>
                 <StackPanel HorizontalAlignment="Center" Margin="0 120 0 0" >
                     <Border Visibility="Visible" BorderBrush="White" CornerRadius="20" BorderThickness="5" Height="330" Width="370">
                         <Grid>
 
-                            <Label Content="Услуга:" HorizontalAlignment="Left" Margin="30 10 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <ComboBox Name="serviceComboBox" Margin="30 0 0 200" Height="30" Width="260" HorizontalAlignment="Center" FontFamily="Tahoma" FontSize="16">
+                            <Label Content="Услуга:" HorizontalAlignment="Left" Margin="30 10 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <ComboBox Name="serviceComboBox" Margin="30 0 0 200" Height="30" Width="260" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="16">
                             </ComboBox>
 
-                            <Label Content="Количество:" HorizontalAlignment="Left" Margin="30 100 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <xctk:IntegerUpDown Name="serviceAmountUpDown" Margin="90 0 0 50" Value="1" Width="100" Height="25" Minimum="1" FontSize="16" FontFamily="Tahoma"/>
+                            <Label Content="Количество:" HorizontalAlignment="Left" Margin="30 100 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <xctk:IntegerUpDown Name="serviceAmountUpDown" Margin="90 0 0 50" Value="1" Width="100" Height="25" Minimum="1" FontSize="16" FontFamily="Calibri"/>
 
 
-                            <Button BorderBrush="{x:Null}" Content="СОХРАНИТЬ УСЛУГУ И ПЕРЕЙТИ К БРОНИ"  Background="#FFBAEDF7" Foreground="White" Margin="0 260 0 0" x:Name="btnCompleteReservation" Command="{Binding ReservationCompCommand}" Height="35" Width="340" FontFamily="Tahoma" FontWeight="Medium" FontSize="17"/>
-                            <Button BorderBrush="{x:Null}" Content="ДОБАВИТЬ ЕЩЁ УСЛУГУ"  Background="#FFBAEDF7" Foreground="White" Margin="0 170 0 0" x:Name="btnAddService" Command="{Binding MoreServCommand}" Height="35" Width="260" FontFamily="Tahoma" FontWeight="Medium" FontSize="17"/>
-                            <Button BorderBrush="{x:Null}" Content="ОТМЕНИТЬ УСЛУГУ И ПЕРЕЙТИ К БРОНИ"  Background="#FFBAEDF7" Foreground="White" Margin="0 80 0 0" x:Name="btnWServReservation" Command="{Binding RefuseServCommand}" Height="35" Width="340" FontFamily="Tahoma" FontWeight="Medium" FontSize="17"/>
+                            <Button BorderBrush="{x:Null}" Content="СОХРАНИТЬ УСЛУГУ И ПЕРЕЙТИ К БРОНИ" Margin="0 260 0 0" x:Name="btnCompleteReservation" Command="{Binding ReservationCompCommand}" Height="35" Width="340"/>
+                            <Button BorderBrush="{x:Null}" Content="ДОБАВИТЬ ЕЩЁ УСЛУГУ" Margin="0 170 0 0" x:Name="btnAddService" Command="{Binding MoreServCommand}" Height="35" Width="260"/>
+                            <Button BorderBrush="{x:Null}" Content="ОТМЕНИТЬ УСЛУГУ И ПЕРЕЙТИ К БРОНИ" Margin="0 80 0 0" x:Name="btnWServReservation" Command="{Binding RefuseServCommand}" Height="35" Width="340"/>
 
                         </Grid>
                     </Border>

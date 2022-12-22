@@ -19,23 +19,23 @@
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="10*" />
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Name="headLb" Content= "ПАРАМЕТРЫ БРОНИРОВАНИЯ" Margin="0 20 0 20" HorizontalAlignment= "Center" VerticalAlignment="Top" FontFamily= "Tahoma" FontSize= "25" FontWeight= "Medium" Foreground= "#FF2F6E7D" />
+                <Label Grid.Row="0" Name="headLb" Content= "ПАРАМЕТРЫ БРОНИРОВАНИЯ" Margin="0 20 0 20" HorizontalAlignment= "Center" VerticalAlignment="Top" FontFamily= "Calibri" FontSize= "25" FontWeight= "Medium" Foreground= "#FF2F7D3B" />
                 <Grid Grid.Row="1">
                     <StackPanel>
-                        <Border Visibility="Visible" Background="#FFBAEDF7" BorderBrush="#FFBAEDF7" CornerRadius="20" Height="380" Width="490">
+                        <Border Visibility="Visible" Background="#FFBAEDBB" BorderBrush="#FFBAF7BB" CornerRadius="20" Height="380" Width="490">
                             <Grid>
-                                <Label Content="ЗАКАЗЧИК: " Name="nameLb" HorizontalAlignment="Center" Margin="0 10 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="КОЛИЧЕСТВО ГОСТЕЙ: " Name="clientsLb" HorizontalAlignment="Center" Margin="0 55 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="НОМЕР: " Name="roomLb" HorizontalAlignment="Center" Margin="0 100 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="ДАТА ЗАЕЗДА: " Name="inWLb" HorizontalAlignment="Left" Margin="30 190 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="ДАТА ЗАЕЗДА" Name="inLb" HorizontalAlignment="Center" Margin="50 190 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="ДАТА ВЫЕЗДА: " Name="outWLb" HorizontalAlignment="Left" Margin="30 235 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="ДАТА ВЫЕЗДА" Name="outLb" HorizontalAlignment="Center" Margin="60 235 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="УСЛУГИ: " Name="servicesLb" HorizontalAlignment="Left" Margin="30 145 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <ComboBox Name="serviceComboBox" Margin="0 145 30 200" Height="30" Width="270" HorizontalAlignment="Right" FontFamily="Tahoma" FontSize="16">
+                                <Label Content="ЗАКАЗЧИК: " Name="nameLb" HorizontalAlignment="Center" Margin="0 10 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="КОЛИЧЕСТВО ГОСТЕЙ: " Name="clientsLb" HorizontalAlignment="Center" Margin="0 55 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="НОМЕР: " Name="roomLb" HorizontalAlignment="Center" Margin="0 100 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="ДАТА ЗАЕЗДА: " Name="inWLb" HorizontalAlignment="Left" Margin="30 190 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3A"/>
+                                <Label Content="ДАТА ЗАЕЗДА" Name="inLb" HorizontalAlignment="Center" Margin="50 190 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="ДАТА ВЫЕЗДА: " Name="outWLb" HorizontalAlignment="Left" Margin="30 235 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="ДАТА ВЫЕЗДА" Name="outLb" HorizontalAlignment="Center" Margin="60 235 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="УСЛУГИ: " Name="servicesLb" HorizontalAlignment="Left" Margin="30 145 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <ComboBox Name="serviceComboBox" Margin="0 145 30 200" Height="30" Width="270" HorizontalAlignment="Right" FontFamily="Calibri" FontSize="16">
                                 </ComboBox>
-                                <Label Content="ОБЩАЯ СТОИМОСТЬ: " Name="costLb" HorizontalAlignment="Left" Margin="30 280 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
-                                <Label Content="НЕОБХОДИМО ВНЕСТИ: " Name="paymentLb" HorizontalAlignment="Left" Margin="30 325 0 0" FontFamily="Tahoma" FontSize="20" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+                                <Label Content="ОБЩАЯ СТОИМОСТЬ: " Name="costLb" HorizontalAlignment="Left" Margin="30 280 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
+                                <Label Content="НЕОБХОДИМО ВНЕСТИ: " Name="paymentLb" HorizontalAlignment="Left" Margin="30 325 0 0" FontFamily="Calibri" FontSize="20" FontWeight="Medium" Foreground="#FF2F7D3B"/>
 
                             </Grid>
                         </Border>
@@ -45,32 +45,32 @@
             </Grid>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Background="#FFDEF9FF">
+        <StackPanel Grid.Column="1" Background="#FFE2FFDE">
             <Grid x:Name= "bookstk">
-                <Label Content="ВВЕДИТЕ ДАННЫЕ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Tahoma" FontSize="30" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+                <Label Content="ВВЕДИТЕ ДАННЫЕ" HorizontalAlignment="Center" Margin="0 40 0 0" FontFamily="Calibri" FontSize="30" FontWeight="Medium" Foreground="#FF2F7D3B"/>
                 <StackPanel HorizontalAlignment="Center" Margin="0 120 0 0" >
                     <Border Visibility="Visible" BorderBrush="White" CornerRadius="20" BorderThickness="5" Height="330" Width="350">
                         <Grid>
 
-                            <Label Content="ФИО заказчика:" HorizontalAlignment="Left" Margin="30 5 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <TextBox Name="fullNameTxb" Height="25" Width="250" HorizontalAlignment="Center" Margin="50 0 0 230" FontFamily="Tahoma" FontSize="16"/>
+                            <Label Content="ФИО заказчика:" HorizontalAlignment="Left" Margin="30 5 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <TextBox Name="fullNameTxb" Height="25" Width="250" HorizontalAlignment="Center" Margin="50 0 0 230" FontFamily="Calibri" FontSize="16"/>
 
-                            <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="30 70 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <DatePicker Name="birthDate" Margin="120 0 0 110" Height="25" Width="130" SelectedDate="02/18/2001" FontFamily="Tahoma" FontSize="14"/>
+                            <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="30 70 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <DatePicker Name="birthDate" Margin="120 0 0 110" Height="25" Width="130" SelectedDate="02/18/2001" FontFamily="Calibri" FontSize="14"/>
 
-                            <Label Content="Даты пребывания:" HorizontalAlignment="Left" Margin="30 125 160.8 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <Label Content="с:" HorizontalAlignment="Left" Margin="15 155 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <Label Content="по:" HorizontalAlignment="Center" Margin="40 155 0 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Tahoma" FontSize="14"/>
-                            <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Tahoma" FontSize="14"/>
+                            <Label Content="Даты пребывания:" HorizontalAlignment="Left" Margin="30 125 160.8 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <Label Content="с:" HorizontalAlignment="Left" Margin="15 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
+                            <Label Content="по:" HorizontalAlignment="Center" Margin="40 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
+                            <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Calibri" FontSize="14"/>
+                            <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Calibri" FontSize="14"/>
 
-                            <Label Content="Внесённая сумма:" Name="payLb" HorizontalAlignment="Left" Margin="30 200 140 0" FontFamily="Tahoma" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <xctk:IntegerUpDown Name="payUpDown" Margin="90 160 0 0" Value="0" Width="150" Height="25" Minimum="0" FontSize="16" FontFamily="Tahoma"/>
+                            <Label Content="Внесённая сумма:" Name="payLb" HorizontalAlignment="Left" Margin="30 200 140 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
+                            <xctk:IntegerUpDown Name="payUpDown" Margin="90 160 0 0" Value="0" Width="150" Height="25" Minimum="0" FontSize="16" FontFamily="Calibri"/>
 
 
-                            <Button BorderBrush="{x:Null}" Content="НАЙТИ"  Background="#FFBAEDF7" Foreground="White" Margin="0 260 0 0" x:Name="btnToCheckIn" Command="{Binding ToCheckInCommand}" Height="35" Width="180" FontFamily="Tahoma" FontWeight="Medium" FontSize="20"/>
-                            <Button BorderBrush="{x:Null}" Content="ЗАСЕЛИТЬ"  Background="#FFBAEDF7" Foreground="White" Margin="0 260 0 0" x:Name="btnCompleteCheckIn" Command="{Binding CompleteCheckInCommand}" Height="35" Width="180" FontFamily="Tahoma" FontWeight="Medium" FontSize="20"/>
-                            <Button BorderBrush="{x:Null}" Content="ВЫСЕЛИТЬ"  Background="#FFBAEDF7" Foreground="White" Margin="0 260 0 0" x:Name="btnCompleteCheckOut" Command="{Binding CompleteCheckOutCommand}" Height="35" Width="180" FontFamily="Tahoma" FontWeight="Medium" FontSize="20"/>
+                            <Button BorderBrush="{x:Null}" Content="НАЙТИ"  Margin="0 260 0 0" x:Name="btnToCheckIn" Command="{Binding ToCheckInCommand}" Height="35" Width="180" FontSize="20"/>
+                            <Button BorderBrush="{x:Null}" Content="ЗАСЕЛИТЬ"  Margin="0 260 0 0" x:Name="btnCompleteCheckIn" Command="{Binding CompleteCheckInCommand}" Height="35" Width="180" FontSize="20"/>
+                            <Button BorderBrush="{x:Null}" Content="ВЫСЕЛИТЬ"  Margin="0 260 0 0" x:Name="btnCompleteCheckOut" Command="{Binding CompleteCheckOutCommand}" Height="35" Width="180" FontSize="20"/>
 
                         </Grid>
                     </Border>

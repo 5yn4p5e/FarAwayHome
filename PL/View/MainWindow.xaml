@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotelFarAwayHome"
-        mc:Ignorable="d" Width="960" Height="550" WindowStartupLocation="CenterScreen" Title="FarAwayHome" Icon="hotelicon.png" FontFamily="Gabriola" Topmost="True">
+        mc:Ignorable="d" Width="960" Height="550" WindowStartupLocation="CenterScreen" Title="FarAwayHome" Icon="hotelicon.png" FontFamily="Gabriola" Topmost="False">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -21,30 +21,30 @@
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <Button BorderBrush="{x:Null}" Margin="0 0 0 0" Content="ЗАБРОНИРОВАТЬ НОМЕР"  Background="#FFBAEDF7" Foreground="White" x:Name="btnBooking" Command="{Binding BookingCommand}" FontFamily="Tahoma" FontWeight="Medium" FontSize="18"/>
+                <Button BorderBrush="{x:Null}" Content="ЗАБРОНИРОВАТЬ НОМЕР" x:Name="btnBooking" Command="{Binding BookingCommand}"/>
             </Grid>
 
             <Grid Grid.Column="1">
-                <Button BorderBrush="{x:Null}" Content="ЗАСЕЛИТЬ" Background="#FFBAEDF7" Foreground="White"  x:Name="btnCheckIn" Command="{Binding CheckInCommand}" FontFamily="Tahoma" FontSize="18" FontWeight="Medium"/>
+                <Button BorderBrush="{x:Null}" Content="ЗАСЕЛИТЬ" x:Name="btnCheckIn" Command="{Binding CheckInCommand}"/>
             </Grid>
 
             <Grid Grid.Column="2">
-                <Button BorderBrush="{x:Null}" Content="ВЫСЕЛИТЬ" Background="#FFBAEDF7" Foreground="White"  x:Name="btnCheckOut" Command="{Binding CheckInCommand}" FontFamily="Tahoma" FontSize="18" FontWeight="Medium"/>
+                <Button BorderBrush="{x:Null}" Content="ВЫСЕЛИТЬ" x:Name="btnCheckOut" Command="{Binding CheckInCommand}"/>
             </Grid>
 
             <Grid Grid.Column="3">
-                <Button BorderBrush="{x:Null}" Content="УСЛУГИ" Background="#FFBAEDF7" Foreground="White"  x:Name="btnServices" Command="{Binding EditServCommand}" FontFamily="Tahoma" FontSize="18" FontWeight="Medium"/>
+                <Button BorderBrush="{x:Null}" Content="УСЛУГИ" x:Name="btnServices" Command="{Binding EditServCommand}"/>
             </Grid>
 
             <Grid Grid.Column="4">
-                <Button BorderBrush="{x:Null}" Content="ОТЧЁТ О ВЫРУЧКЕ" Background="#FFBAEDF7" Foreground="White"  x:Name="btnIncome" Command="{Binding IncomeCommand}" FontFamily="Tahoma" FontSize="18" FontWeight="Medium"/>
+                <Button BorderBrush="{x:Null}" Content="ОТЧЁТ О ВЫРУЧКЕ" x:Name="btnIncome" Command="{Binding IncomeCommand}"/>
             </Grid>
 
         </Grid>
 
         <Grid Grid.Row="1" Name="stk">
             <Image Source="main.jpg" HorizontalAlignment="Center" VerticalAlignment="Top" />
-            <Label Content="ОТЕЛЬ ВДАЛИ ОТ ДОМА" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40" FontFamily="Tahoma" FontSize="40" FontWeight="Medium" Foreground="#FF2F6E7D"/>
+            <Label Content="ОТЕЛЬ ВДАЛИ ОТ ДОМА" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40" FontFamily="Calibri" FontSize="40" Foreground="#FF2F7D3B"/>
         </Grid>
 
     </Grid>
