@@ -96,7 +96,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Dictionaries\DataGridViewsDictionary.xaml">
+    <Page Include="View\Dictionaries\DataGridsDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,7 +112,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\EditWindow.xaml">
+    <Page Include="View\ShowServicesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,8 +130,8 @@
     <Compile Include="View\CheckInWindow.xaml.cs">
       <DependentUpon>CheckInWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\EditWindow.xaml.cs">
-      <DependentUpon>EditWindow.xaml</DependentUpon>
+    <Compile Include="View\ShowServicesWindow.xaml.cs">
+      <DependentUpon>ShowServicesWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

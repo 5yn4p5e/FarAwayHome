@@ -4,11 +4,11 @@ using System.Windows.Controls;
 namespace HotelFarAwayHome.View
 {
     /// <summary>
-    /// Логика взаимодействия для ReservationWindow.xaml
+    /// Логика взаимодействия для EditWindow.xaml
     /// </summary>
-    public partial class ReservationWindow : UserControl
+    public partial class ShowServicesWindow : UserControl
     {
-        public ReservationWindow(ApplicationViewModel appViewModel)
+        public ShowServicesWindow(ApplicationViewModel appViewModel)
         {
             InitializeComponent();
             DataContext = appViewModel;

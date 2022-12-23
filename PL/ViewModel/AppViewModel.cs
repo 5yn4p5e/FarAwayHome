@@ -3,10 +3,8 @@ using HotelFarAwayHome.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace HotelFarAwayHome.ViewModel
 {
@@ -23,6 +21,7 @@ namespace HotelFarAwayHome.ViewModel
 
         private BookingWindow booking;
         private RelayCommand bookingCommand;
+
         public RelayCommand BookingCommand      //открыть страницу поиска и вывести список комнат
         {
             get
@@ -685,7 +684,7 @@ namespace HotelFarAwayHome.ViewModel
         }
 
         public List<string> ServTypes;
-        private EditWindow servEditing;
+        private ShowServicesWindow servEditing;
         private RelayCommand editServCommand;
         public RelayCommand EditServCommand
         {
@@ -696,7 +695,7 @@ namespace HotelFarAwayHome.ViewModel
                   {
                       try
                       {
-                          servEditing = new EditWindow(this);
+                          servEditing = new ShowServicesWindow(this);
 
                           MainWindow.stk.Children.Clear();
 
@@ -706,7 +705,6 @@ namespace HotelFarAwayHome.ViewModel
                           servEditing.serviceTypeComboBox.ItemsSource = ServTypes;
                           servEditing.serviceTypeComboBox.SelectedIndex = 0;
                           servEditing.servGrd.Visibility = Visibility.Hidden;
-                          servEditing.btnEditServ.Visibility = Visibility.Hidden;
 
                           MainWindow.stk.Children.Add(servEditing);
                       }
@@ -765,10 +763,6 @@ namespace HotelFarAwayHome.ViewModel
                                       break;
                                   }
                           }
-
-                          servEditing.btnEditServ.Visibility = Visibility.Visible;
-                          servEditing.btnSearchServ.Visibility = Visibility.Hidden;
-
                       }
                       catch (Exception ex)
                       {

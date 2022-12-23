@@ -56,13 +56,13 @@
                             <TextBox Name="fullNameTxb" Height="25" Width="250" HorizontalAlignment="Center" Margin="50 0 0 230" FontFamily="Calibri" FontSize="16"/>
 
                             <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="30 70 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
-                            <DatePicker Name="birthDate" Margin="120 0 0 110" Height="25" Width="130" SelectedDate="02/18/2001" FontFamily="Calibri" FontSize="14"/>
+                            <DatePicker Name="birthDate" Margin="120 0 0 110" Height="25" Width="130" SelectedDate="08/08/2002" FontFamily="Calibri" FontSize="14"/>
 
                             <Label Content="Даты пребывания:" HorizontalAlignment="Left" Margin="30 125 160.8 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
                             <Label Content="с:" HorizontalAlignment="Left" Margin="15 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
                             <Label Content="по:" HorizontalAlignment="Center" Margin="40 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F6E7D"></Label>
-                            <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Calibri" FontSize="14"/>
-                            <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Calibri" FontSize="14"/>
+                            <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2022" FontFamily="Calibri" FontSize="14"/>
+                            <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2023" FontFamily="Calibri" FontSize="14"/>
 
                             <Label Content="Внесённая сумма:" Name="payLb" HorizontalAlignment="Left" Margin="30 200 140 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
                             <xctk:IntegerUpDown Name="payUpDown" Margin="90 160 0 0" Value="0" Width="150" Height="25" Minimum="0" FontSize="16" FontFamily="Calibri"/>

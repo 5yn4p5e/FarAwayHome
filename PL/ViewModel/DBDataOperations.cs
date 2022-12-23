@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelFarAwayHome.ViewModel
 {
@@ -118,15 +116,6 @@ namespace HotelFarAwayHome.ViewModel
             }
         }
 
-        public void UpdateReservation(Reservation res)
-        {
-            Reservation r = db.Reservation.Find(res.Id);
-            r.TotalPrice = res.TotalPrice;
-            r.Paid = res.Paid;
-            r.Status = res.Status;
-            Save();
-        }
-
         public Client GetClient(Client client)
         {
             Client cl = db.Client.Where(c => c.FullName == client.FullName && c.Birthdate == client.Birthdate &&
@@ -137,23 +126,13 @@ namespace HotelFarAwayHome.ViewModel
             else return null;
         }
 
-        public Reservation GetReservation(int id)
-        {
-            Reservation r = db.Reservation.Where(re => re.Id == id).FirstOrDefault();
-
-            if (r != null)
-                return r;
-            else return null;
-        }
-
         public Reservation GetReservation(DateTime inday, DateTime outday, int roomnum)
         {
-            Reservation r = db.Reservation.Where(re => re.Room1.RoomNumber == roomnum && re.CheckInDate == inday
-            && re.CheckOutDate == outday).FirstOrDefault();
+            Reservation r = db.Reservation.Where(re => re.Room1.RoomNumber == roomnum
+            && ((inday >= re.CheckInDate && inday <= re.CheckOutDate)
+            || (inday >= re.CheckInDate && inday <= re.CheckOutDate))).FirstOrDefault();
 
-            if (r != null)
-                return r;
-            else return null;
+            return r;
         }
 
         public Status GetStatus(int id)
@@ -163,30 +142,24 @@ namespace HotelFarAwayHome.ViewModel
 
         public Reservation GetReservation(string name, DateTime bday, DateTime inday, DateTime outday)
         {
-            Reservation res = db.Reservation.Where(r => r.Client1.FullName == name && r.Client1.Birthdate == bday &&
-            r.CheckInDate == inday && r.CheckOutDate == outday).FirstOrDefault();
+            Reservation res = db.Reservation.Where(r => r.Client1.FullName == name && r.Client1.Birthdate == bday
+            && r.CheckInDate == inday && r.CheckOutDate == outday).FirstOrDefault();
 
-            if (res != null)
-                return res;
-            else return null;
+            return res;
         }
 
         public Room GetRoom(int number)
         {
             Room r = db.Room.Where(ro => ro.RoomNumber == number).FirstOrDefault();
 
-            if (r != null)
-                return r;
-            else return null;
+            return r;
         }
 
         public Room GetRoomId(int number)
         {
             Room r = db.Room.Where(ro => ro.Id == number).FirstOrDefault();
 
-            if (r != null)
-                return r;
-            else return null;
+            return r;
         }
 
         public ServiceString MakeServiceString(Reservation res, Service service, int amount)

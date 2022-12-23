@@ -7,7 +7,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="View/Dictionaries/ButtonsDictionary.xaml"/>
-                <ResourceDictionary Source="View/Dictionaries/DataGridViewsDictionary.xaml"/>
+                <ResourceDictionary Source="View/Dictionaries/DataGridsDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

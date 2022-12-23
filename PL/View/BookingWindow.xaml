@@ -61,8 +61,8 @@
                         <Label Content="Даты пребывания:" HorizontalAlignment="Center" Margin="40,125,160.8,0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
                         <Label Content="с:" HorizontalAlignment="Left" Margin="15 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
                         <Label Content="по:" HorizontalAlignment="Center" Margin="40 155 0 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
-                        <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2021" FontFamily="Calibri" FontSize="14"/>
-                        <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2022" FontFamily="Calibri" FontSize="14"/>
+                        <DatePicker Name="inDate" Margin="0 20 145 0" Height="25" Width="110" SelectedDate="12/25/2022" FontFamily="Calibri" FontSize="14"/>
+                        <DatePicker Name="outDate" Margin="185 20 0 0" Height="25" Width="110" SelectedDate="01/10/2023" FontFamily="Calibri" FontSize="14"/>
 
                         <Label Content="Тип комнаты:" HorizontalAlignment="Center" Margin="0 200 140 0" FontFamily="Calibri" FontSize="15" Foreground="#FF2F7D3B"></Label>
                         <ComboBox Name="roomTypeComboBox" Margin="0 165 0 0" Height="25" Width="120" HorizontalAlignment="Center" FontFamily="Calibri" FontSize="14">
